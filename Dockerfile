@@ -19,6 +19,8 @@ RUN curl -O $host/$rpm \
     && rpm -i $rpm \
     && rm 7E2223C5.pub $rpm \
     && yum install -y fontconfig \
+    && yum install -y sysvinit-tools \
+    && yum install -y procps \
     && yum clean all
 
 ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
