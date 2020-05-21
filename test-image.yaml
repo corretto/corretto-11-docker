@@ -4,6 +4,8 @@ metadataTest:
   env:
     - key: JAVA_HOME
       value: /usr/lib/jvm/java-11-amazon-corretto
+    - key: LANG
+      value: C.UTF-8
 
 commandTests:
   - name: "java command is registered using alternatives."
